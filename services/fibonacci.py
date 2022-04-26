@@ -5,16 +5,16 @@ def fibonacciService(nterms):
 
     # check if the number of terms is valid
     if nterms <= 0:
-        print("Please enter a positive integer")
+        print("Por favor ingrese un número entero positivo")
     
     # if there is only one term, return n1
     elif nterms == 1:
-        print("Fibonacci sequence upto",nterms,":")
+        print("Secuencia de Fibonacci hasta",nterms,":")
         print(n1)
     
     # generate fibonacci sequence
     else:
-        print("Fibonacci sequence:")
+        print("Fibonacci secuencia:")
         while count < nterms:
             print(n1)
             nth = n1 + n2
@@ -23,4 +23,3 @@ def fibonacciService(nterms):
             n2 = nth
             count += 1
     
-    return 0
